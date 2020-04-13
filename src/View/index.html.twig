@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    quête twig
+{% endblock %}
+{% block content %}
+    <div class="row">
+    {% for product in products %}
+    <div class="card col-4" style="width: 18rem;">
+        <div class="card-body">
+            <p class="card-text">{{ product }}</p>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+{% endblock %}
